@@ -1,6 +1,7 @@
 import React from 'react';
-import Card from "./components/card/index"
+import Card from "./components/Card/index"
 import Wrapper from "./components/Wrapper/index"
+import Header from "./components/Header/index"
 import './App.css';
 
 function shuffleCards(array){
