@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Captain America",
+        "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/d/d7/CapAmerica-EndgameProfile.jpg/revision/latest/scale-to-width-down/2000?cb=20190423175339",
+        "isClicked": 0
+    },
+    {
+        "id": 2,
+        "name": "Iron Man",
+        "image": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/3/35/IronMan-EndgameProfile.jpg/revision/latest/scale-to-width-down/2000?cb=20190423175213",
+        "isClicked": 0
+    },
+    {
+        "id": 3,
+        "name": "Thor",
+        "image": "https://www.screengeek.net/wp-content/uploads/2019/08/thor-love-and-thunder-1.jpg",
+        "isClicked": 0
+    },
+    {
+        "id": 4,
+        "name": "The Hulk",
+        "image": "https://images2.minutemediacdn.com/image/upload/c_crop,h_1208,w_2148,x_152,y_0/f_auto,q_auto,w_1100/v1554700157/shape/mentalfloss/575457-marvel_studios.jpg",
+        "isClicked": 0
+    }
+]

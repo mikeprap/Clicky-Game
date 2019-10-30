@@ -1,26 +1,14 @@
 import React from 'react';
 import Card from "./components/card/index"
+import Wrapper from "./components/Wrapper/index"
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function shuffleCards(array){
+  for(let i = array.length - 1; i > 0; i-- ){
+    let b = Math.floor(Math.random()* (i + 1));
+    [array[i], array[b]] = [array[b], array[i]];
+  }
+  return array;
 }
 
 export default App;
