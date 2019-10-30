@@ -10,5 +10,29 @@ function shuffleCards(array){
   }
   return array;
 }
+class App extends React.Component {
+  state = {
+    superHero: shuffleCards(superHero),
+    score:0,
+    highscore: 0
+  }
+  checkClicked = id =>{
+    this.state.superHero.forEach(superHero=>{
+      if(superHero.id === id){
+        if(!superHero.isClicked){
+          superHero.isClicked = 1
+          this.setState({score: this.state.score + 1})
+        
+      }else {
+        if (this.state.score > this.state.highscore){
+          this.setState({highscore:this.state.score})
+        }
+        this.setState({score:0})
+        this.state.superHero.forEach(superHero=>superHero.isClicked=0);
+      }
+    }
+  });
+  this.setState({superHero:shuffleCards(superHero)})
+}
 
 export default App;
