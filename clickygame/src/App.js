@@ -1,7 +1,8 @@
 import React from 'react';
-import Card from "./components/Card/index"
-import Wrapper from "./components/Wrapper/index"
-import Header from "./components/Header/index"
+import Card from "./components/Card"
+import Wrapper from "./components/Wrapper"
+import Header from "./components/Header"
+import superHero from "./superhero.json"
 import './App.css';
 
 function shuffleCards(array){
@@ -34,6 +35,30 @@ class App extends React.Component {
     }
   });
   this.setState({superHero:shuffleCards(superHero)})
+}
+
+render(){
+  return(
+    <div>
+      <Header
+      score={this.state.score}
+      highscore={this.state.highscore}
+      />
+      <Wrapper> 
+        {this.state.superHero.map(superHero=>(
+          <Card
+          checkClicked = {this.checkClicked}
+          id={superHero.id}
+          key={superHero.id}
+          name={superHero.name}
+          image={superHero.image}
+          isClicked={superHero.isClicked}
+          />
+        ))}
+      </Wrapper>
+    </div>
+  )
+}
 }
 
 export default App;
